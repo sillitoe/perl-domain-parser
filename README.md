@@ -1,4 +1,4 @@
-# Parsing a CSV file into a data structure
+# Perl: writing a simple protein domain parser 
 
 So, we have the following data in a file:
 
