@@ -13,6 +13,7 @@ has sequence => (
 has md5 => (
   is => 'ro',
   isa => 'Str',
+	required => 1,
 );
 
 has sequence_length => (

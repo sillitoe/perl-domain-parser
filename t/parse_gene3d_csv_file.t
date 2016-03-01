@@ -1,4 +1,5 @@
 use Test::More;
+use Test::Exception;
 
 use warnings;
 use strict;
@@ -6,6 +7,7 @@ use strict;
 use My::Utils;
 use FindBin;
 use Path::Class;
+use My::Protein;
 
 my $test_data_file = "$FindBin::Bin/test_data.csv";
 
@@ -44,5 +46,7 @@ isa_ok( $example_domain, 'My::Domain' );
 is( $example_domain->count_segments, 2, 'correct number of segments' );
 
 is( $example_protein->to_mda_string( type => 'largest_segment' ), '3.30.930.10__3.30.930.10__3.40.50.800', 'mda string (based on largest segment) looks okay' );
+
+throws_ok { My::Protein->new() } qr/required/, 'Protein requires MD5';
 
 done_testing;
