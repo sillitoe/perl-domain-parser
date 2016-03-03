@@ -1,5 +1,7 @@
 # Perl: a simple protein domain parser 
 
+[![Build Status](https://travis-ci.org/sillitoe/perl-domain-parser.svg?branch=master)](https://travis-ci.org/sillitoe/perl-domain-parser)
+
 So, we have the following data in a file:
 
     36e7577f574fa4ff9eeef861a9186178,3.90.70.10.FF16963,57:453,1,VSTDSTPV...
