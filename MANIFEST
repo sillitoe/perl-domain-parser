@@ -1,0 +1,14 @@
+.travis.yml
+Build.PL
+data/4932_ensembl.csv
+lib/My/Domain.pm
+lib/My/Protein.pm
+lib/My/Segment.pm
+lib/My/Utils.pm
+MANIFEST			This list of files
+README.md
+script/cath-ppi-network.pl
+script/cath-ppi-network.py
+t/interactions.t
+t/parse_gene3d_csv_file.t
+t/test_data.csv
